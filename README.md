@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# User Profile Card - React Component
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A clean, modern, and responsive user profile card component built with React using windsurf.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Circular avatar image with placeholder
+- User's full name display
+- Username with @ prefix
+- Short bio section
+- Location display with icon
+- Interactive Follow button with state toggle
+- Conditional rendering for "Own Profile" state
+- Responsive design for all devices
+- Clean, modern UI with subtle animations
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+npm install
+npm start
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Implementation Screenshots
 
-### `npm test`
+### Initial User Profile Card
+![Initial User Profile Card](inital-card.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Modification 1: Follow Button Toggle
+![Follow Button Toggle](modification-1.png)
 
-### `npm run build`
+### Modification 2: Follow Button Toggle
+![Follow Button Toggle](modification-2.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Modification 3: Own Profile State
+![Own Profile State](modification-3.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Modification 4: Background Color Change on Hover
+![Background Color Change on Hover](modification-4.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Prompts Used
 
-### `npm run eject`
+### Part 1 Prompt
+```
+craete a user profile card using react
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+user profile card requirments
+A placeholder for a user avatar (circular image).
+User's full name.
+Username (e.g., @username).
+A short bio section.
+A "Follow" button.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Use default values for all props
+Avatar should be 1:1 aspect ratio
+Avoid external library except react
+Make it look clean and modern
+Ensure responsive design for all devices
+Use best design pratices.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+use the current directory.
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Part 2 Prompt
+* Used windsurf AI to improve the user profile card with following prompot.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+improve the user profile card with
 
-### Code Splitting
+Interactivity: Make the "Follow" button toggle its text between "Follow" and "Following" when clicked use a global state using context.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+New Element: Add a section to display a "Location" (e.g., "San Francisco, CA"). format it properly with icon.
 
-### Analyzing the Bundle Size
+Styling Change: Change the background color of the card when the mouse hovers over it.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Conditional Logic (Conceptual):making the "Follow" button appear disabled and show "Own Profile" if a hypothetical isOwnProfile prop/variable was true. have a button which will togel the IsOwnProfile var and  pass it to profile card.
+```
 
-### Making a Progressive Web App
+## Implementation Process
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+No manual refinements were needed as the AI-generated code worked perfectly for the requirements. The implementation process was smooth, with the Context API providing a clean solution for global state management without external libraries.
